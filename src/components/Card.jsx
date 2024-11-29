@@ -14,7 +14,7 @@ export default function Card({ id, title, image, content, tags }) {
           {tags && (
             <div className="tags-badge-container">
               {tags.map((tag, index) => (
-                <Badge key={index} tag={tag} />
+                <Badge key={index} tag={tag} style="tags-badge-card" />
               ))}
             </div>
           )}

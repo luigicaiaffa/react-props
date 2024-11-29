@@ -24,6 +24,12 @@
 
 /* ! BADGES ! */
 
+/* # Header Tags Badge */
+
+.tags-badge-header {
+  cursor: pointer;
+}
+
 /* # Card Tags Badge */
 
 .tags-badge-container {
@@ -32,6 +38,6 @@
   bottom: 1rem;
 }
 
-.tags-badge {
+.tags-badge-card {
   margin-left: 5px;
 }

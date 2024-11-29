@@ -1,4 +1,4 @@
-export default function Badge({ tag }) {
+export default function Badge({ tag, style }) {
   let tagColor = "";
 
   if (tag === "html") {
@@ -15,8 +15,6 @@ export default function Badge({ tag }) {
   }
 
   return (
-    <span className={tagColor + "rounded " + "p-1 " + "tags-badge"}>
-      &#35;{tag}
-    </span>
+    <span className={tagColor + "rounded " + "p-1 " + style}>&#35;{tag}</span>
   );
 }
