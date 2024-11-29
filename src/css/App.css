@@ -21,3 +21,17 @@
   background-color: #be8d12;
   color: white;
 }
+
+/* ! BADGES ! */
+
+/* # Card Tags Badge */
+
+.tags-badge-container {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.tags-badge {
+  margin-left: 5px;
+}

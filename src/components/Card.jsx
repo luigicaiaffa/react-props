@@ -1,5 +1,6 @@
 import img from "../assets/img/placeholder-600x400.png";
 import Button from "./Button";
+import Badge from "./Badge";
 
 export default function Card({ id, title, image, content, tags }) {
   return (
@@ -9,9 +10,11 @@ export default function Card({ id, title, image, content, tags }) {
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{content}</p>
-          <p>post n.{id}</p>
-          <div className="d-flex justify-content-between">
-            <Button style="card-btn">LEGGI DI PI&#217;</Button>
+          <Button style="card-btn">LEGGI DI PI&#217;</Button>
+          <div className="tags-badge-container">
+            {tags.map((tag) => (
+              <Badge tag={tag} />
+            ))}
           </div>
         </div>
       </div>
