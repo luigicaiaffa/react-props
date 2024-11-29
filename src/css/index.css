@@ -1,0 +1,23 @@
+/* ! Reset & Utils */
+
+/* # Body  */
+
+#root {
+  background-color: #e5e5e5;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* # Footer */
+
+footer {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  margin-top: auto;
+  padding: 1.5rem;
+}

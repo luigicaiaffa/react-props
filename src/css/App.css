@@ -1,0 +1,23 @@
+/* ! CARDS ! */
+
+/* # Card Main */
+
+.card-main {
+  width: 25rem;
+}
+
+/* ! BUTTONS ! */
+
+/* # Card Button */
+
+.card-btn {
+  background-color: #daa320;
+  color: white;
+  border: 1px solid #daa320;
+  padding: 0.5rem 0.8rem;
+}
+
+.card-btn:hover {
+  background-color: #be8d12;
+  color: white;
+}
