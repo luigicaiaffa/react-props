@@ -11,14 +11,14 @@
 /* # Card Button */
 
 .card-btn {
-  background-color: #daa320;
+  background-color: #cb6b31;
   color: white;
-  border: 1px solid #daa320;
+  border: 1px solid #cb6b31;
   padding: 0.5rem 0.8rem;
 }
 
 .card-btn:hover {
-  background-color: #be8d12;
+  background-color: #983d07;
   color: white;
 }
 
