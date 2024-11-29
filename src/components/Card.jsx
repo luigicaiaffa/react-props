@@ -8,14 +8,16 @@ export default function Card({ id, title, image, content, tags }) {
       <div className="card card-main">
         <img src={image || img} className="card-img-top" alt="img" />
         <div className="card-body">
-          <h5 className="card-title">{title}</h5>
-          <p className="card-text">{content}</p>
+          {title && <h5 className="card-title">{title}</h5>}
+          {content && <p className="card-text">{content}</p>}
           <Button style="card-btn">LEGGI DI PI&#217;</Button>
-          <div className="tags-badge-container">
-            {tags.map((tag) => (
-              <Badge tag={tag} />
-            ))}
-          </div>
+          {tags && (
+            <div className="tags-badge-container">
+              {tags.map((tag, index) => (
+                <Badge key={index} tag={tag} />
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </div>

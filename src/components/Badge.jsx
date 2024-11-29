@@ -1,21 +1,21 @@
 export default function Badge({ tag }) {
-  let tagColor;
+  let tagColor = "";
 
   if (tag === "html") {
-    tagColor = "text-bg-success";
+    tagColor = "text-bg-success ";
   }
   if (tag === "css") {
-    tagColor = "text-bg-primary";
+    tagColor = "text-bg-primary ";
   }
   if (tag === "js") {
-    tagColor = "bg-warning text-white";
+    tagColor = "bg-warning text-white ";
   }
   if (tag === "php") {
-    tagColor = "text-bg-danger";
+    tagColor = "text-bg-danger ";
   }
 
   return (
-    <span className={tagColor + " rounded" + " p-1" + " tags-badge"}>
+    <span className={tagColor + "rounded " + "p-1 " + "tags-badge"}>
       &#35;{tag}
     </span>
   );
